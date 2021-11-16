@@ -4,6 +4,11 @@ import user from "../assets/user.jpg";
 
 import MenuItem from "./MenuItem";
 
+import Home from './Home';
+import Projects from './Projects';
+import React_JS from './React_JS';
+import React_Native from './React-Native';
+
 /**
  * @author
  * @function SideMenu
@@ -12,19 +17,19 @@ import MenuItem from "./MenuItem";
 // added more menuItems for testing
 export const menuItems = [
   {
-    name: "Home",
+    name: <Home />,
     exact: true,
     to: "/",
     iconClassName: "bi bi-house",
   },
   {
-    name: "Project",
+    name: <Projects/>,
     exact: true,
-    to: `/project`,
+    to: `/projects`,
     iconClassName: "bi bi-speedometer2",
     subMenus: [
-      { name: "Courses", to: "/content/courses" },
-      { name: "Videos", to: "/content/videos" },
+      { name: <React_JS />, to: "/projects/react_js" },
+      { name: <React_Native />, to: "/projects/react-native" },
     ],
   },
   { name: "CV", to: `/cv`, iconClassName: "bi bi-vector-pen" },
