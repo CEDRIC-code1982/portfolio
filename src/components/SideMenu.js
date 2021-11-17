@@ -65,10 +65,6 @@ const SideMenu = () => {
             <span>Projects</span>  
           </div>
           </NavLink>
-              <ul>
-                <li className="sub-menu">React</li>
-                <li className="sub-menu">React Native</li>
-              </ul>
           <li>
           <NavLink
               className='cv'
