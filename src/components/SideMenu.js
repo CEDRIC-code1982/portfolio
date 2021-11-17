@@ -87,7 +87,7 @@ const SideMenu = () => {
         </div>
         <div className="user-info">
           <h5>Cédric Pineau</h5>
-          <a href="mailto:cedric.pineau007@gmail.com" >cedric.pineau007@gmail.com</a>
+          <p>cedric.pineau007@gmail.com</p>
         </div>
       </div>
     </div>

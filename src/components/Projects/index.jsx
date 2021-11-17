@@ -4,7 +4,10 @@ import React from 'react';
 
 const Projects = () => (
     <div className='home'>
-      <h1>Projects</h1>
+      <div className='react'>
+      <h1>Projet React</h1>
+      </div>
+      
     </div>
   
   );
