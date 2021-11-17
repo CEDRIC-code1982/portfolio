@@ -124,6 +124,8 @@ body{
     cursor: pointer;
 }
 
+.side-menu .main-menu .menu-item .
+
 .side-menu .main-menu .menu-item.active{
     background: #333;
     border-radius: 5px;
@@ -167,6 +169,11 @@ body{
     overflow: hidden;
 }
 
+.side-menu .main-menu .side-menu {
+   color: #333;
+   right: 50%;
+}
+/*
 .side-menu .main-menu .sub-menu{
     color: #333;
     margin-left: 20px;
@@ -184,7 +191,7 @@ body{
     max-height: 200px;
 }
 
-.side-menu .main-menu .sub-menu a{
+.side-menu .main-menu .sub-menu {
     display: block;
     margin: 5px 0;
     font-size: 15px;
@@ -193,18 +200,18 @@ body{
     color: #333;
     box-sizing: border-box;
     padding: 5px;
-}
+}*/
 
 
-.side-menu .main-menu .sub-menu a.active{
-    /* change in background, not recorded in video */
+/*.side-menu .main-menu .sub-menu a.active{
+    change in background, not recorded in video 
     background: #222;
     display: block;
     
     border-radius: 5px;
     color: #fff;
 
-}
+}*/
 
 .side-menu-footer{
     width: 100%;
