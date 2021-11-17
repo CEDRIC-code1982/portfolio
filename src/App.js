@@ -1,17 +1,14 @@
 import "./App.css";
-import SideMenu, { menuItems } from "./components/SideMenu";
+import SideMenu from "./components/SideMenu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 
-//const Content = () => <h1>Content</h1>;
-//const Courses = () => <h1>Content/Courses</h1>;
-//const Videos = () => <h1>Content/Videos</h1>;
-//const Design = () => <h1>Design</h1>;
-//const Content2 = () => <h1>Content2</h1>;
-//const Courses2 = () => <h1>Content/Courses 2</h1>;
-//const Videos2 = () => <h1>Content/Videos 2</h1>;
-//const Design2 = () => <h1>Design 2</h1>;
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import ReactJs from "./components/ReactJs";
+import ReactNative from "./components/ReactNative";
+import CV from "./components/CV";
 
 function App() {
   const [inactive, setInactive] = useState(false);
@@ -27,52 +24,24 @@ function App() {
         />
 
         <div className={`container ${inactive ? "inactive" : ""}`}>
-          {/* improvememt, not recorded in video, its just looping through menuItems
-          instead of hard coding all the routes */}
-          {menuItems.map((menu, index) => (
-            <>
-              <Route key={menu.name} exact={menu.exact} path={menu.to}>
-                <h1>{menu.name}</h1>
-              </Route>
-              {menu.subMenus && menu.subMenus.length > 0
-                ? menu.subMenus.map((subMenu, i) => (
-                    <Route key={subMenu.name} path={subMenu.to}>
-                      <h1>{subMenu.name}</h1>
-                    </Route>
-                  ))
-                : null}
-            </>
-          ))}
-
-          {/* <Switch>
+         
+         <Switch>
             <Route exact path={"/"}>
-              <Dashboard />
+              <Home />
             </Route>
-            <Route exact path={"/content"}>
-              <Content />
+            <Route exact path={"/projects"}>
+              <Projects />
             </Route>
-            <Route path={"/content/courses"}>
-              <Courses />
+            <Route path={"/projects/react"}>
+              <ReactJs />
             </Route>
-            <Route path={"/content/videos"}>
-              <Videos />
+            <Route path={"/projects/react-native"}>
+              <ReactNative />
             </Route>
-            <Route path={"/design"}>
-              <Design />
+            <Route path={"/cv"}>
+              <CV/>
             </Route>
-            <Route exact path={"/content-2"}>
-              <Content2 />
-            </Route>
-            <Route path={"/content-2/courses"}>
-              <Courses2 />
-            </Route>
-            <Route path={"/content-2/videos"}>
-              <Videos2 />
-            </Route>
-            <Route path={"/design-2"}>
-              <Design2 />
-            </Route>
-          </Switch> */}
+          </Switch> 
         </div>
       </Router>
     </div>
@@ -80,3 +49,30 @@ function App() {
 }
 
 export default App;
+
+
+//const Content = () => <h1>Content</h1>;
+//const Courses = () => <h1>Content/Courses</h1>;
+//const Videos = () => <h1>Content/Videos</h1>
+//const Design = () => <h1>Design</h1>;
+//const Content2 = () => <h1>Content2</h1>;
+//const Courses2 = () => <h1>Content/Courses 2</h1>;
+//const Videos2 = () => <h1>Content/Videos 2</h1>;
+//const Design2 = () => <h1>Design 2</h1>;
+
+ /* improvememt, not recorded in video, its just looping through menuItems
+          instead of hard coding all the routes 
+          {menuItems.map((menu, index) => (
+            <>
+              <Route key={menu.name} exact={menu.exact} path={menu.to}>
+                <h1>{menu.name}</h1>
+              </Route>
+              {menu.subMenus && menu.subMenus.length > 0
+                /*? menu.subMenus.map((subMenu, i) => (
+                    <Route key={subMenu.name} path={subMenu.to}>
+                      <h1>{subMenu.name}</h1>
+                    </Route>
+                  ))
+                : null}
+            </>
+          ))} */
