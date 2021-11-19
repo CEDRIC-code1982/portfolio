@@ -1,0 +1,26 @@
+.react {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 3rem !important;
+    
+}
+
+.native {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

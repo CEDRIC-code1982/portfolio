@@ -42,12 +42,13 @@ body{
 
 .side-menu{
     position: fixed;
-    background: rgba(54, 53, 53, 0.068);
+    background: whitesmoke;
     width: 300px;
     height: 100%;
     box-sizing: border-box;
     padding: 30px 20px;
     transition: width .2s ease-in;
+    z-index: 1;
 }
 
 .side-menu.inactive{
@@ -268,7 +269,7 @@ body{
 }
 
 .container{
-    margin-left: 300px;
+    margin-left: 20px;
     transition: margin-left .2s ease-in;
     padding: 50px;
     box-sizing: border-box;
