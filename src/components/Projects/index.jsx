@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card} from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 
 import './styles.css';
 
@@ -12,7 +12,7 @@ import github from "/home/cedric/Repository/Portfolio/portfolio/src/assets/githu
 const Projects = () => (
   <div className='projects'>
     <div className='react'>
-      <h1>Projets React</h1>
+      <h1>Projets en React</h1>
       <ul className='react-project'>
         <li><a href="https://convertisseur.surge.sh/"><Card color='blue' className='card'
           image={convertisseur}
@@ -37,7 +37,7 @@ const Projects = () => (
       </ul>
     </div>
     <div className='native'>
-      <h1>Projets React Native</h1>
+      <h1>Projets en  React Native</h1>
       <h2>En cours de développement</h2>
     </div>
   </div>

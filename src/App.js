@@ -8,7 +8,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import ReactJs from "./components/ReactJs";
 import ReactNative from "./components/ReactNative";
-import CV from "./components/CV";
+import Cv from "./components/Cv";
 
 function App() {
   const [inactive, setInactive] = useState(false);
@@ -39,7 +39,7 @@ function App() {
               <ReactNative />
             </Route>
             <Route path={"/cv"}>
-              <CV/>
+              <Cv/>
             </Route>
           </Switch> 
         </div>

@@ -7,11 +7,11 @@ const Home = () => (
       <h1>Bienvenue sur mon portfolio</h1>
       <br />
       <p>
-         Après 20 années dans l'automobile très enrichissantes. J'ai décidé de me lancer un nouveau défi.
+         Après 20 années dans l'automobile très enrichissantes, j'ai décidé de me lancer un nouveau défi.
       </p>
       <br />
       <p>
-         Repartir de zéro dans un domaine inconnu pour moi, mais qui m'a toujours fasciné. J'ai choisi une formation intensive avec l'école O'Clock pour apprendre le développement web.
+         Repartir de zéro dans un domaine inconnu pour moi et qui m'a toujours fasciné. J'ai choisi une formation intensive avec l'école O'Clock pour apprendre le développement web.
       </p>
       <br />
       <p>
