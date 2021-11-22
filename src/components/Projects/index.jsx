@@ -1,8 +1,13 @@
 import React from 'react';
 
-import { Card } from 'semantic-ui-react';
+import { Card} from 'semantic-ui-react';
 
 import './styles.css';
+
+import convertisseur from "/home/cedric/Repository/Portfolio/portfolio/src/assets/convertisseur.jpg";
+import todolist from "/home/cedric/Repository/Portfolio/portfolio/src/assets/todolist.jpg";
+import gradient from "/home/cedric/Repository/Portfolio/portfolio/src/assets/gradient.jpg";
+import github from "/home/cedric/Repository/Portfolio/portfolio/src/assets/github.jpg";
 
 const Projects = () => (
   <div className='projects'>
@@ -10,22 +15,22 @@ const Projects = () => (
       <h1>Projets React</h1>
       <ul className='react-project'>
         <li><a href="https://convertisseur.surge.sh/"><Card color='blue' className='card'
-          image='../assets/user.jpg'
+          image={convertisseur}
           header='Convertisseur'
           description='Un joli convertisseur en React très reactif !'
         /></a></li>
         <li><a href="https://cp-todo.surge.sh/"><Card color='blue' className='card'
-          image='../assets/user.jpg'
+          image={todolist}
           header='Todolist'
           description='Fini les oublies avec la Todolist !'
         /></a></li>
         <li><a href="https://gradient-vanilla.surge.sh/"><Card color='blue' className='card'
-          image='/src/assets/user.jpg'
+          image={gradient}
           header='Gradient'
           description='Idéal pour trouver une nuance !'
         /></a></li>
         <li><a href="https://apigit.surge.sh/"><Card color='blue' className='card'
-          image='../assets/user.jpg'
+          image={github}
           header='Api Github'
           description='Pratique pour rechercher sur Github !'
         /></a></li>

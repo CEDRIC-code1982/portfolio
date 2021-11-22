@@ -10,13 +10,14 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: center
 }
 
 .card {
+    box-sizing: border-box !important;
     margin-bottom: 3rem !important;
-    
-}
+    width: 20rem !important; 
+} 
 
 .native {
     display: flex;
@@ -24,3 +25,4 @@
     justify-content: center;
     align-items: center;
 }
+
