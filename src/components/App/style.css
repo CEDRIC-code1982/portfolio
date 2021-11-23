@@ -128,8 +128,6 @@ body{
     max-height: 250px;
     overflow-y: scroll;
     overflow-x: hidden;
-    display: flex;
-    justify-content: space-around;
 }
 
 .side-menu .main-menu .menu-item .menu-icon{

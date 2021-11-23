@@ -1,14 +1,14 @@
-import "./App.css";
-import SideMenu from "./components/SideMenu";
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import ReactJs from "./components/ReactJs";
-import ReactNative from "./components/ReactNative";
-import Cv from "./components/Cv";
+import SideMenu from "../SideMenu";
+import Home from "../Home";
+import Projects from "../Projects";
+import ReactJs from "../ReactJs";
+import ReactNative from "../ReactNative";
+import Cv from "../Cv";
+
+import "./style.css";
 
 function App() {
   const [inactive, setInactive] = useState(false);

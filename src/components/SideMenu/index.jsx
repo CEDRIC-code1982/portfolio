@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 //import logo from "../assets/logo/webscript.png";
-import user from "../assets/user.jpg";
+import user from "/home/cedric/Repository/Portfolio/portfolio/src/assets/user.jpg";
 
 /**
  * @author
