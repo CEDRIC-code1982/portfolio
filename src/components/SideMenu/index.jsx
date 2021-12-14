@@ -65,7 +65,7 @@ const SideMenu = () => {
               <span>Projects</span>
             </div>
           </NavLink>
-          <li>
+          {/*<li>
             <NavLink
               className='cv'
               exact
@@ -78,7 +78,7 @@ const SideMenu = () => {
                 <span>CV</span>
               </div>
             </NavLink>
-          </li>
+          </li>*/}
           <li>
             <div className="menu-item">
               <a href="https://github.com/CEDRIC-code1982">
