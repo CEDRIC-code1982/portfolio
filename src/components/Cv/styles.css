@@ -1,3 +1,8 @@
+.pdf {
+    position: absolute;
+    left: 18%;
+}
+
 .cvpdf {
     width: 100vh;
     height: 100vh;

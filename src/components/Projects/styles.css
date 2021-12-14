@@ -15,8 +15,7 @@
 
 .card {
     box-sizing: border-box !important;
-    margin-bottom: 3rem !important;
-    margin-top: 3rem !important;
+    margin: 3rem 0.8rem !important;
     width: 20rem !important; 
 }
 
