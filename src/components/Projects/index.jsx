@@ -4,10 +4,10 @@ import { Card } from 'semantic-ui-react';
 
 import './styles.css';
 
-import convertisseur from "/home/cedric/Repository/Portfolio/portfolio/src/assets/convertisseur.jpg";
-import todolist from "/home/cedric/Repository/Portfolio/portfolio/src/assets/todolist.jpg";
-import gradient from "/home/cedric/Repository/Portfolio/portfolio/src/assets/gradient.jpg";
-import github from "/home/cedric/Repository/Portfolio/portfolio/src/assets/github.jpg";
+import convertisseur from "../../assets/convertisseur.jpg";
+import todolist from "../../assets/todolist.jpg";
+import gradient from "../../assets/gradient.jpg";
+import github from "../../assets/github.jpg";
 
 const Projects = () => (
   <div className='projects'>
