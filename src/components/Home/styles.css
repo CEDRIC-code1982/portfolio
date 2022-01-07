@@ -1,0 +1,11 @@
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+}

@@ -1,0 +1,16 @@
+.pdf {
+    position: absolute;
+    left: 18%;
+}
+
+.cvpdf {
+    width: 100vh;
+    height: 100vh;
+}
+
+iframe {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 150%;
+    height: 220%;   
+}

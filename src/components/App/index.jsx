@@ -1,14 +1,14 @@
-import "./App.css";
-import SideMenu from "./components/SideMenu";
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import ReactJs from "./components/ReactJs";
-import ReactNative from "./components/ReactNative";
-import CV from "./components/CV";
+import SideMenu from "../SideMenu";
+import Home from "../Home";
+import Projects from "../Projects";
+import ReactJs from "../ReactJs";
+import ReactNative from "../ReactNative";
+//import Cv from "../Cv";
+
+import "./style.css";
 
 function App() {
   const [inactive, setInactive] = useState(false);
@@ -24,8 +24,8 @@ function App() {
         />
 
         <div className={`container ${inactive ? "inactive" : ""}`}>
-         
-         <Switch>
+
+          <Switch>
             <Route exact path={"/"}>
               <Home />
             </Route>
@@ -38,10 +38,10 @@ function App() {
             <Route path={"/projects/react-native"}>
               <ReactNative />
             </Route>
-            <Route path={"/cv"}>
-              <CV/>
-            </Route>
-          </Switch> 
+            {/*<Route path={"/cv"}>
+              <Cv />
+        </Route>*/}
+          </Switch>
         </div>
       </Router>
     </div>
@@ -60,19 +60,19 @@ export default App;
 //const Videos2 = () => <h1>Content/Videos 2</h1>;
 //const Design2 = () => <h1>Design 2</h1>;
 
- /* improvememt, not recorded in video, its just looping through menuItems
-          instead of hard coding all the routes 
-          {menuItems.map((menu, index) => (
-            <>
-              <Route key={menu.name} exact={menu.exact} path={menu.to}>
-                <h1>{menu.name}</h1>
-              </Route>
-              {menu.subMenus && menu.subMenus.length > 0
-                /*? menu.subMenus.map((subMenu, i) => (
-                    <Route key={subMenu.name} path={subMenu.to}>
-                      <h1>{subMenu.name}</h1>
-                    </Route>
-                  ))
-                : null}
-            </>
-          ))} */
+/* improvememt, not recorded in video, its just looping through menuItems
+         instead of hard coding all the routes
+         {menuItems.map((menu, index) => (
+           <>
+             <Route key={menu.name} exact={menu.exact} path={menu.to}>
+               <h1>{menu.name}</h1>
+             </Route>
+             {menu.subMenus && menu.subMenus.length > 0
+               /*? menu.subMenus.map((subMenu, i) => (
+                   <Route key={subMenu.name} path={subMenu.to}>
+                     <h1>{subMenu.name}</h1>
+                   </Route>
+                 ))
+               : null}
+           </>
+         ))} */
