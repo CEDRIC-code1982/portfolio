@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 a {
     color: inherit !important;
-    
+
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 }
-li{
+
+li {
     list-style: none;
 }
-body{
+
+body {
     background-color: #eee;
     font-family: 'Open Sans', sans-serif;
 }
@@ -23,32 +25,32 @@ body{
 /* width */
 ::-webkit-scrollbar {
     width: 3px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
     display: none;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #333; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333;
     border-radius: 10px;
     display: none;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #333; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
     display: block;
-  }
+}
 
 
-.side-menu{
+.side-menu {
     position: fixed;
-    background: whitesmoke;
+    background: rgb(245, 245, 245);
     width: 300px;
     height: 100%;
     box-sizing: border-box;
@@ -57,16 +59,16 @@ body{
     z-index: 1;
 }
 
-.side-menu.inactive{
+.side-menu.inactive {
     width: 80px;
 }
 
-.side-menu .top-section{
+.side-menu .top-section {
     position: relative;
     margin-bottom: 2.5rem;
 }
 
-.side-menu .top-section .toggle-menu-btn{
+.side-menu .top-section .toggle-menu-btn {
     color: rgb(20, 123, 241);
     font-size: 35px;
     position: absolute;
@@ -75,15 +77,15 @@ body{
     overflow: hidden;
     display: inline-block;
     right: 2px;
-    
+
 }
 
-.side-menu .search-controller{
+.side-menu .search-controller {
     color: #fff;
     position: relative;
 }
 
-.side-menu .search-controller .search-btn{
+.side-menu .search-controller .search-btn {
     width: 40px;
     height: 35px;
     position: absolute;
@@ -93,7 +95,7 @@ body{
     color: rgb(20, 123, 241);
 }
 
-.side-menu .search-controller input[type=text]{
+.side-menu .search-controller input[type=text] {
     border: 0;
     outline: none;
     height: 35px;
@@ -107,7 +109,7 @@ body{
     color: white;
 }
 
-.side-menu .main-menu .menu-item{
+.side-menu .main-menu .menu-item {
     color: #333;
     text-decoration: none;
     font-size: 15px;
@@ -116,13 +118,13 @@ body{
     cursor: pointer;
 }
 
-.side-menu .main-menu .menu-item.active{
+.side-menu .main-menu .menu-item.active {
     background: #333;
     border-radius: 5px;
     color: #fff;
 }
 
-.side-menu .main-menu{
+.side-menu .main-menu {
     margin: 5px 0;
     position: relative;
     max-height: 250px;
@@ -130,7 +132,7 @@ body{
     overflow-x: hidden;
 }
 
-.side-menu .main-menu .menu-item .menu-icon{
+.side-menu .main-menu .menu-item .menu-icon {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -139,7 +141,7 @@ body{
     text-align: center;
 }
 
-.side-menu .main-menu .menu-item span{
+.side-menu .main-menu .menu-item span {
     position: absolute;
     display: inline-block;
     line-height: 40px;
@@ -147,7 +149,7 @@ body{
     transition: opacity .2s ease-in;
 }
 
-.side-menu.inactive .main-menu .menu-item span{
+.side-menu.inactive .main-menu .menu-item span {
     opacity: 0;
     width: 0;
     height: 0;
@@ -155,12 +157,12 @@ body{
 }
 
 .side-menu .main-menu .side-menu {
-   color: #333;
-   right: 50%;
-   
+    color: #333;
+    right: 50%;
+
 }
 
-.side-menu .main-menu .sub-menu.active{
+.side-menu .main-menu .sub-menu.active {
     max-height: 200px;
 }
 
@@ -175,7 +177,7 @@ body{
     padding: 5px;
 }
 
-.side-menu-footer{
+.side-menu-footer {
     width: 100%;
     background: rgb(20, 123, 241);
     position: absolute;
@@ -185,18 +187,19 @@ body{
     box-sizing: border-box;
 }
 
-.side-menu-footer .avatar{
+.side-menu-footer .avatar {
     width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%;
     display: inline-block;
 }
-.side-menu-footer .avatar img{
+
+.side-menu-footer .avatar img {
     max-width: 100%;
 }
 
-.side-menu-footer .user-info{
+.side-menu-footer .user-info {
     display: inline-block;
     margin: 0 10px;
     color: #fff;
@@ -205,7 +208,7 @@ body{
     transition: opacity .2s ease-in;
 }
 
-.side-menu.inactive .side-menu-footer .user-info{
+.side-menu.inactive .side-menu-footer .user-info {
     opacity: 1;
     width: 0;
     height: 0;
@@ -213,29 +216,29 @@ body{
 }
 
 
-.side-menu-footer .user-info h5{
+.side-menu-footer .user-info h5 {
     font-size: 15px;
 }
 
 
-.side-menu-footer .user-info p{
+.side-menu-footer .user-info p {
     font-size: 14px;
 }
 
-.divider{
+.divider {
     width: 100%;
     height: 1px;
     border-radius: 1px;
     background: #333;
 }
 
-.container{
+.container {
     margin-left: 80px;
     transition: margin-left .2s ease-in;
     padding: 50px;
     box-sizing: border-box;
 }
 
-.container.inactive{
+.container.inactive {
     margin-left: 80px;
 }
