@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
-//import logo from "../assets/logo/webscript.png";
+//import logo from "../../assets/logo/logo192.png";
 import user from "../../assets/user.jpg";
 
 /**
@@ -16,7 +16,7 @@ const SideMenu = () => {
     <div className={`side-menu ${inactive ? "inactive" : ""}`}>
       <div className="top-section">
         {/*<div className="logo">
-          <img src={logo} alt="webscript" />
+          <img src={logo} alt="react" />
         </div>*/}
         <div onClick={() => setInactive(!inactive)} className="toggle-menu-btn">
           {inactive ? (

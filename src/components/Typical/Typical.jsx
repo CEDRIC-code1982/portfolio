@@ -8,18 +8,17 @@ import './styles.css';
 const steps = [
     'Bonjour 👋', 2000,
     'Bienvenue sur mon portfolio !', 2000,
-    'Je suis Cédric Pineau', 2000,
+    "Je m'appelle Cédric Pineau", 2000,
     'Je suis développeur React ', 2000,
-    'Je suis développeur React Native', 2000,
+    'Je suis développeur React et React Native', 2000,
+    'Bonne lecture et bonne navigation !', 2000,
 ];
-
-
 
 const Text = () => (
     <>
         <Typical
             steps={steps}
-            loop={Infinity}
+            //loop={Infinity}
             wrapper="p"
             className={'text'}
         />
