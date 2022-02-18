@@ -50,7 +50,7 @@ body {
 /* for the navBar */
 .side-menu {
     position: fixed;
-    background: rgba(245, 245, 245, 0);
+    background: rgba(245, 245, 245);
     width: 300px;
     height: 100%;
     box-sizing: border-box;
@@ -61,6 +61,7 @@ body {
 
 .side-menu.inactive {
     width: 80px;
+    background-color: rgb(245, 245, 245,0);
 }
 
 .side-menu .top-section {
