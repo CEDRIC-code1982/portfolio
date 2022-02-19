@@ -1,0 +1,21 @@
+.fullName {
+    position: relative;
+}
+.container {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.fullName {
+    margin: 0.5rem;
+}
+
+.label {
+    margin: 0.5rem;
+}
+
+.message {
+    margin: 0.5rem;
+}

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 //import logo from "../../assets/logo/logo192.png";
 import user from "../../assets/user.jpg";
 
+
 /**
  * @author
  * @function SideMenu
@@ -98,7 +99,20 @@ const SideMenu = () => {
                 <span>LinKedin</span>
               </a>
             </div>
-
+          </li>
+          <li>
+            <NavLink
+              className='contactForm'
+              exact
+              to="/contact"
+            >
+              <div className="menu-item">
+                <div className="menu-icon">
+                  <i className="bi bi-pencil-square"></i>
+                </div>
+                <span>Contact</span>
+              </div>
+            </NavLink>
           </li>
         </ul>
       </div>
